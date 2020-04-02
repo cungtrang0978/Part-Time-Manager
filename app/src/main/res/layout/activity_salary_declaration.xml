@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainActivity.salary.SalaryDeclaration">
+
+    <RelativeLayout
+        android:id="@+id/layout_Taskbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp">
+
+        <ImageButton
+            android:id="@+id/button_Cancel"
+            android:src="@drawable/icons8_back_32"
+            android:background="@null"
+            android:layout_alignTop="@id/textView_Label"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/textView_Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Salary Declaration"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorTextLabel"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/line"
+        android:layout_below="@id/layout_Taskbar"
+        android:background="#f00"
+        />
+
+    <AutoCompleteTextView
+        android:id="@+id/multiAutoCompTextView_Name"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:text="All"
+        android:background="@drawable/bg_edit_text"
+        android:textSize="20sp"
+        android:layout_below="@id/layout_Taskbar"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="5dp"
+        android:paddingEnd="25dp"
+        android:layout_marginTop="5dp"
+        android:completionThreshold="1"/>
+    <ImageButton
+        android:id="@+id/imageButton_ClearName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/multiAutoCompTextView_Name"
+        android:layout_alignEnd="@id/multiAutoCompTextView_Name"
+        android:src="@drawable/icons8_delete_16"
+        android:layout_alignBottom="@id/multiAutoCompTextView_Name"
+        android:padding="5dp"
+        android:background="@null"
+        android:text="X" />
+
+    <TextView
+        android:id="@+id/textView_DateFrom"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_edit_text"
+        android:textSize="20sp"
+        android:layout_below="@id/multiAutoCompTextView_Name"
+        android:padding="5dp"
+        android:paddingEnd="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="Date"
+        android:gravity="center"/>
+    <ImageButton
+        android:id="@+id/imageButton_ClearDateFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textView_DateFrom"
+        android:layout_alignEnd="@id/textView_DateFrom"
+        android:src="@drawable/icons8_delete_16"
+        android:layout_alignBottom="@id/textView_DateFrom"
+        android:padding="5dp"
+        android:background="@null"
+        android:text="X" />
+
+    <ImageView
+        android:id="@+id/imageView_Down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_DateFrom"
+        android:background="@drawable/icons8_down_arrow_16"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textView_DateTo"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_edit_text"
+        android:textSize="20sp"
+        android:layout_below="@id/imageView_Down"
+        android:padding="5dp"
+        android:paddingEnd="25dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Date"
+        android:gravity="center"/>
+    <ImageButton
+        android:id="@+id/imageButton_ClearDateTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textView_DateTo"
+        android:layout_alignEnd="@id/textView_DateTo"
+        android:src="@drawable/icons8_delete_16"
+        android:layout_alignBottom="@id/textView_DateTo"
+        android:padding="5dp"
+        android:background="@null"
+        android:text="X" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_Export"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@id/textView_DateFrom"
+        android:background="@drawable/icons8_export_32"
+        android:layout_marginEnd="10dp"/>
+    <ExpandableListView
+        android:id="@+id/expandListView_Salary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_DateTo"
+        android:layout_above="@id/textView_SumSalary"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="5dp"/>
+    <TextView
+        android:id="@+id/textView_SumSalary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="Sum Salary"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

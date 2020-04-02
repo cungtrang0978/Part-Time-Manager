@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_employee_information"
+    android:padding="5dp">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout1"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/textView_Id_Info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="id"
+            android:textSize="24dp"
+            android:textColor="#000"
+            />
+        <TextView
+            android:id="@+id/textView_Name_Info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:text="name"
+            android:layout_toEndOf="@id/textView_Id_Info"
+            android:layout_marginStart="20dp"
+            android:textColor="#000"
+
+            />
+        <TextView
+            android:id="@+id/textView_Address_Info"
+            android:layout_width="wrap_content"
+            android:textSize="24dp"
+            android:layout_height="wrap_content"
+            android:text="address"
+            android:layout_below="@id/textView_PhoneNumber_Info"
+            android:textColor="#000"
+            />
+        <TextView
+            android:id="@+id/textView_PhoneNumber_Info"
+            android:layout_width="wrap_content"
+            android:textSize="24dp"
+            android:layout_height="wrap_content"
+            android:text="phone number"
+            android:layout_below="@id/textView_Id_Info"
+            android:textColor="#000"
+            />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView_FirstImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout1"
+        android:src="@drawable/identification_documents_240px"
+        android:layout_marginBottom="10dp"
+        android:scaleType="fitCenter"
+        />
+    <ImageView
+        android:id="@+id/imageView_SecondImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/imageView_FirstImage"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/identification_documents_240px"
+        android:layout_marginBottom="10dp"
+        android:scaleType="fitCenter"/>
+
+
+</RelativeLayout>

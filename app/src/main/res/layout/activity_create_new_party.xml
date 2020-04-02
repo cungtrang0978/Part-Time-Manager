@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layout_Taskbar_CreateNewParty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <ImageButton
+            android:id="@+id/button_Cancel"
+            android:background="@drawable/icons8_delete_sign_32"
+            android:layout_alignTop="@id/textView_Label"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageButton
+            android:id="@+id/button_Create"
+            android:background="@drawable/icons8_checkmark_filled_32"
+            android:layout_alignTop="@id/textView_Label"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/textView_Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Create New Party"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorTextLabel"
+            />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_centerHorizontal="true"
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/layout_Taskbar_CreateNewParty"
+        android:background="#C0DBF1"/>
+
+    <EditText
+        android:id="@+id/editText_partyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_Taskbar_CreateNewParty"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_edit_text"
+        android:hint="Party Name"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="20dp"/>
+    <Switch
+        android:id="@+id/switch_partyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/editText_partyName"
+        android:layout_alignTop="@id/editText_partyName"
+        android:layout_alignBottom="@id/editText_partyName"
+        />
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_partyName"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/textView_Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Date"
+            android:inputType="date"
+            android:textSize="18sp"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/textView_TimeBegin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="From"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/textView_Date"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/textView_TimeEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="To"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/textView_TimeBegin"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/textView_Floor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Floor"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/textView_TimeEnd"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textView_Location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Location"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/textView_Floor"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textView_HourlyWage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Hourly Wage"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/textView_Location"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/textView_NumOfEmps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Number Emps"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/textView_HourlyWage"
+            android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/layout1"
+        android:layout_toEndOf="@id/layout1">
+        <TextView
+            android:id="@+id/editText_Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edit_text"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentStart="true"
+            />
+
+        <TextView
+            android:id="@+id/editText_TimeBegin"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_edit_text"
+            android:padding="10dp"
+            android:text="17:00"
+            android:textSize="18sp"
+            android:layout_below="@id/editText_Date"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/editText_TimeEnd"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_edit_text"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:layout_below="@id/editText_TimeBegin"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentStart="true"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/editText_Floor"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_edit_text"
+            android:padding="10dp"
+            android:text="Upper Floor"
+            android:completionThreshold="0"
+            android:textSize="18sp"
+            android:layout_below="@id/editText_TimeEnd"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentStart="true"/>
+
+        <EditText
+            android:id="@+id/editText_Location"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_edit_text"
+            android:padding="10dp"
+            android:layout_below="@id/editText_Floor"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentStart="true"/>
+
+
+        <AutoCompleteTextView
+            android:id="@+id/editText_HourlyWage"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_edit_text"
+            android:inputType="number"
+            android:padding="10dp"
+            android:text="25000"
+            android:completionThreshold="0"
+            android:layout_below="@id/editText_Location"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentStart="true"/>
+
+        <EditText
+            android:id="@+id/editText_NumberOfEmps"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_edit_text"
+            android:inputType="number"
+            android:padding="10dp"
+            android:layout_below="@id/editText_HourlyWage"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+
+
+
+     <GridView
+         android:id="@+id/gridView_add_PartTimer"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_below="@id/button_OnOff_AddPartTimer"
+         android:numColumns="auto_fit"
+         android:background="@drawable/bg_edit_text"
+         android:padding="5dp"
+         android:visibility="invisible"
+         android:verticalSpacing="5dp"
+         android:horizontalSpacing="5dp"
+         />
+    <ImageButton
+        android:id="@+id/imageButton_add_PartTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/icons8_add_48"
+        android:background="@null"
+        android:visibility="invisible"
+        />
+    <Button
+        android:id="@+id/button_OnOff_AddPartTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/layout1"
+        android:text="Add Part-Timer"
+        android:paddingHorizontal="5dp"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/button"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_ClearAllAdded"
+        android:text="Clear All Added"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="5dp"
+        android:layout_alignTop="@id/button_OnOff_AddPartTimer"
+        android:textAllCaps="false"
+        android:visibility="invisible"
+        android:background="@drawable/button"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Part-Time Manager</string>
+    <string name="title_activity_tab">tab</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string-array name="timeBegin">
+        <item>10</item>
+        <item>17</item>
+    </string-array>
+    <string-array name="timeEnd">
+        <item>22</item>
+        <item>22.5</item>
+        <item>23</item>
+        <item>23.5</item>
+        <item>24</item>
+        <item>15</item>
+        <item>15.5</item>
+        <item>16</item>
+        <item>16.5</item>
+        <item>17</item>
+    </string-array>
+    <string-array name="floor">
+        <item>Upper Floor</item>
+        <item>2nd Floor</item>
+        <item>M Floor</item>
+        <item>G Floor</item>
+    </string-array>
+    <string-array name="hourlyWage">
+        <item>25000</item>
+        <item>30000</item>
+        <item>40000</item>
+        <item>50000</item>
+    </string-array>
+</resources>

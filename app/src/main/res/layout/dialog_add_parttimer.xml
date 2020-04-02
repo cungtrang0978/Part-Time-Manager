@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView_Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Part-Timer"
+        android:layout_gravity="center_horizontal"
+        android:textAllCaps="true"
+        android:textSize="25dp"
+        android:textColor="@color/colorTextLabel"
+        android:padding="5dp"/>
+
+    <ListView
+        android:id="@+id/listView_Add_PartTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="356dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton_Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:src="@drawable/icons8_cancel_64"
+        android:layout_gravity="center_horizontal"
+        android:paddingVertical="5dp"/>
+
+</LinearLayout>
